@@ -72,7 +72,7 @@ export default function ExploreCarer() {
   return (
     <div className='container mx-auto'>
         <h3 className='text2xl lg:text-5xl text-center'>Explore Careers at Therap BD Ltd.</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 items-center mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6 items-center mt-10">
 {careers.map((cr,i)=>(
     <div key={i} className='bg-slate-50 border border-slate-100 dark:border-slate-500 flex items-center justify-between rounded-lg dark:bg-slate-700 px-3 py-3'>
     <div className='flex items-center gap-3'>

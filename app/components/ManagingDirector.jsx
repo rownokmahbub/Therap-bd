@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ManagingDirector() {
   return (
-    <div className='container mx-auto flex flex-col justify-center items-center mt-10'>
+    <div className='container mx-auto flex flex-col justify-center items-center my-10'>
 
         <Image src='/audio.png' className='w-20 h-20 ' width={400} height={400} alt='audio'/>
         <h3 className='text-2xl lg:text-5xl my-6 font-semibold'>Message from the Managing Director</h3>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Footer = () => {
     return (
-      <div className="relative mt-16 bg-slate-100 dark:bg-slate-800">
+      <div className="relative mt-20 bg-slate-100 dark:bg-slate-800">
         <svg
           className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-slate-100 dark:text-slate-800"
           preserveAspectRatio="none"
@@ -25,28 +25,23 @@ export const Footer = () => {
               >
            
           <Image
-              className=" w-16 h-16"
+              className=" w-full h-16"
               loading="lazy"
               object-fit="cover"
-              height={100}
-              width={100}
+              height={1000}
+              width={1000}
               src="/darklogo.png"
               alt="image"
             />
          
-                <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                  BigganPathShala
-                </span>
+             
               </a>
-              <div className="mt-4 lg:max-w-sm">
+              <div className="mt-10 lg:max-w-sm">
                 <p className="text-sm text-deep-purple-50">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium, totam rem aperiam.
                 </p>
-                <p className="mt-4 text-sm text-deep-purple-50">
-                  Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo.
-                </p>
+            
               </div>
             </div>
             <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
