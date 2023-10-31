@@ -5,28 +5,33 @@ import {RiArrowRightCircleFill} from 'react-icons/ri'
 const Services = () => {
     const popularCategory= [
         {
-            image:'/1.jpg',
-            title:'It & Software',
-            href:'/it'
+            
+            title:'Customers Serve',
+            des:'From 2004 to till now we serve around 10000+ customer all over the world.Therap provides Software as a Service (SaaS) to government and private organizations globally.',
+            exp:'10k+'
         },
         {
-            image:'/2.jpg',
-            title:'It & Software',
-            href:'/it'
+            
+            title:'Years Of Experience',
+            des:'Therap (BD) Ltd. is a US-based Software Company registered in Bangladesh, operating since 2004. We have our office in Dhaka, Bangladesh, and affiliate offices in the USA and Canada.',
+            exp:'19+'
+        },
+      
+        {
+            
+            title:'Across Countries',
+            des:'Therap provides Software as a Service (SaaS) to government and private organizations globally that serve people with intellectual and developmental disabilities.',
+            exp:'10+'
         },
         {
-            image:'/3.jpg',
-            title:'It & Software',
-            href:'/it'
-        },
-        {
-            image:'/4.jpg',
-            title:'It & Software',
-            href:'/it'
+            
+            title:'Team Members',
+            des:'We are a global team of professionals who actively collaborate to develop solutions for individuals and service providers in order to make a difference in their lives.',
+            exp:'300+'
         },
     ]
   return (
-    <div className='light-bg dark:dark-bg'>
+    <div className=''>
        <div className='container mx-auto  flex flex-col justify-center items-center mt-10 '>
        <h4 className='flex justify-center items-center text-md lg:text-lg  bg-yellow-100 dark:bg-yellow-800 px-4 py-1 my-5 w-fit rounded-lg border-t-4 border-yellow-300 text-yellow-600 dark:text-yellow-200'>Our Journey</h4>
     
@@ -36,14 +41,13 @@ const Services = () => {
     {
         popularCategory.map((ctg,i)=>{
             return(
-                <div key={i} className="rounded-lg bg-slate-100 dark:bg-slate-800 flex gap-3 flex-col group overflow-hidden transition duration-400 shadow-xl shadow-slate-50 dark:shadow-slate-900">
-       
-        <p className='text-lg font-semibold  bg-gray-400 dark:bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100'>{ctg.title}</p>
-        <div className="flex justify-between items-center">
-            <p>View Demo</p>
-            <Link className='group-hover:scale-90' href={ctg.href}>
-                <RiArrowRightCircleFill className='text-4xl text-slate-500 dark:text-slate-200'/>
-            </Link>
+                <div key={i} className="rounded-lg bg-slate-100 dark:bg-slate-800 flex gap-3 flex-col   w-full group overflow-hidden transition duration-400 shadow-xl shadow-slate-100 border-2 border-white dark:border-slate-600 dark:shadow-slate-900">
+           
+        <p className='text-lg font-semibold text-center  bg-gray-200 dark:bg-gray-900 rounded-md px-4 pb-10 pt-10'>{ctg.title}</p>
+        <p className='mx-auto flex justify-center items-center -mt-10 bg-primary px-4 py-4 rounded-full w-16 h-16 text-lg font-semibold text-white shadow-xl shadow-yellow-100 dark:shadow-yellow-600'>{ctg.exp}</p>
+        <div className="w-full px-4 pt-2 pb-4">
+            <p className='text-center'>{ctg.des}</p>
+           
         </div>
         </div>
             )

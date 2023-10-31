@@ -2,9 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import {PiStudentFill} from 'react-icons/pi';
-import {LiaChalkboardTeacherSolid} from 'react-icons/lia'
-import EnrollModal from './model/EnrollModal';
 const InDoorGame = () => {
    
   return (
