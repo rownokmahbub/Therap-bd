@@ -75,7 +75,7 @@ will gain a solid foundation in educational psychology.</p>
   <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:gap-10 lg:h-[80vh]">
   <div className='max-w-4xl w-full '>
   <p className=' text-sm lg:text-lg  bg-yellow-100 dark:bg-yellow-800 px-4 py-1 my-5 w-fit rounded-xl border-l-8 border-yellow-300 text-yellow-600 dark:text-yellow-200'>Learn & Grow With Us</p>
-  <h1 className='text-base lg:text-5xl  uppercase font-bold mt-5'>You don't just learn 
+  <h1 className='text-base lg:text-5xl  uppercase font-bold mt-5'>You don't just learn <br />
 here, you grow</h1>
   <p className='text-xs lg:text-md text-slate-400 dark:text-slate-300 font-medium max-w-lg my-5'>Through a combination of lectures, readings, and discussions, students
 will gain a solid foundation in educational psychology.</p>
