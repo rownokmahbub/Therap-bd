@@ -16,7 +16,7 @@ export default class Carousel extends Component {
       slidesToScroll: 2,
       autoplay: true,
       autoplaySpeed: 3000,
-      arrows:false,
+      arrows:true,
       swipe:true,
       dots: true,
       pauseOnHover: true
@@ -26,7 +26,7 @@ export default class Carousel extends Component {
       
 
         <Slider {...settings}>
-        <div className="w-full px-2">
+        <div className="w-full px-2 md:px-0">
           <div className=" relative container lg:mx-auto light-bg dark:dark-bg py-2 mt-5 lg:mt-10 rounded-xl border-4 border-slate-100 dark:border-slate-500 dark:shadow-2xl px-3 lg:px-10 ">
 
 
@@ -46,7 +46,7 @@ will gain a solid foundation in educational psychology.</p>
  
 </div>
           </div>
-          <div className="w-full px-2">
+          <div className="w-full px-2 md:px-0 ">
           <div className=" relative container lg:mx-auto light-bg dark:dark-bg py-2 mt-5 lg:mt-10 rounded-xl border-4 border-slate-100 dark:border-slate-500 dark:shadow-2xl px-3 lg:px-10 ">
 
 
@@ -66,7 +66,7 @@ will gain a solid foundation in educational psychology.</p>
  
 </div>
           </div>
-        <div className="w-full px-2">
+        <div className="w-full px-2 md:px-0">
           <div className=" relative container lg:mx-auto light-bg dark:dark-bg py-2 mt-5 lg:mt-10 rounded-xl border-4 border-slate-100 dark:border-slate-500 dark:shadow-2xl px-3 lg:px-10 ">
 <div className="absolute top-64  left-52 lg:top-64 lg:left-96 animate-spin-slow">
 <Image className='max-w-xs w-full h-full' loading='lazy' object-fit='contain' height={100} width={800}  src="/infoicon.png" alt="image" />
