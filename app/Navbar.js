@@ -122,15 +122,28 @@ export default function App() {
           {
             navlinks.map((link,i)=>{
               return(
-                <Link key={i} className={pathname=== `${link.href}` ? 'text-lg font-medium' : ''} color="foreground" href={link.href}>
+                <Link key={i} className={pathname=== `${link.href}` ? ' bg-primary text-white rounded-lg px-3 py-1.5' : 'text-lg font-medium'} color="foreground" href={link.href}>
              {link.label}
             </Link>
               )
             })
           }
-       
-       
+          <Button onClick={() => scrollToSection('department')}  className='text-lg font-medium' color="foreground">
+               Department
+             
+            </Button>
+                <Button onClick={() => scrollToSection('aboutus')}  className='text-lg font-medium' color="foreground">
+               About Us
+             
+            </Button>
+            <Button onClick={() => scrollToSection('contactus')}  className='text-lg font-medium' color="foreground">
+               Contact Us
+             
+            </Button>
+            
+          
           <Switch />
+          
          
           </div>}
         
