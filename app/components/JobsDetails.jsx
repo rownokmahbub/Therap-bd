@@ -62,7 +62,7 @@ export default function JobsDetails() {
     },
   ];
   return (
-    <div className="container mx-auto md:h-screen max-w-6xl w-full">
+    <div className="container mx-auto md:h-screen max-w-6xl px-4 md:px-0 w-full">
       <div className="bg-white/80 z-50 dark:bg-slate-900/80 backdrop-blur-xl py-3 w-full sticky top-0 ">
         <Link href="currentopening" className="flex gap-3 my-5 items-center">
           <MdArrowBack />
