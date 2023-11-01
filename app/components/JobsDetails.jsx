@@ -6,7 +6,53 @@ import { IoTimerOutline } from "react-icons/io5";
 import { MdArrowBack, MdOutlineWorkOutline } from "react-icons/md";
 import Link from "next/link";
 import { Button } from "@nextui-org/react";
+import { BsPatchCheck } from "react-icons/bs";
 export default function JobsDetails() {
+    const skills=[
+        {
+            title:'Proficient in Figma, Adobe Illustrator, and Adobe Photoshop.'
+        },
+        {
+            title:'Basic understanding of wireframes and prototypes.'
+        },
+        {
+            title:'Basic understanding of cross-browser compatibility issues.'
+        },
+        {
+            title:'Basic understanding about CMS such as Wordpress and designing websites using wordpress themes.'
+        },
+        {
+            title:'Basic understanding of HTML and CSS.'
+        },
+        {
+            title:'Basic understanding of responsive layouts.'
+        },
+        {
+            title:'Proficient understanding of the importance of user-centered design.'
+        },
+        {
+            title:'Basic understanding of web design principles.'
+        },
+        {
+            title:'Comply with brand guidelines. '
+        },
+        {
+            title:'Basic understanding about email newsletters/campaigns.'
+        },
+        {
+            title:'Basic understanding about iconography.'
+        },
+        {
+            title:'Time management skills to work on multiple projects at once and with various deadlines.'
+        },
+        {
+            title:'Excellent communication skills.'
+        },
+        {
+            title:'Positive attitude and willingness to learn new tools.'
+        },
+        
+    ]
   return (
     <div className="container mx-auto md:h-screen  w-full">
       <div className="bg-white/80 z-50 dark:bg-slate-900/80 backdrop-blur-xl py-3 w-full sticky top-0 ">
@@ -47,30 +93,74 @@ export default function JobsDetails() {
           </div>
         </div>
       </div>
-      <div className="bg-slate-50 shadow-xl shadow-slate-50 dark:shadow-slate-800 border border-slate-200 dark:border-slate-600 dark:bg-slate-800 rounded-xl md:px-10 py-10 mt-10">
+      <div className="bg-slate-50 shadow-xl shadow-slate-50 dark:shadow-slate-800 border border-slate-200 dark:border-slate-600 dark:bg-slate-800 rounded-xl px-4 md:px-10 py-10 mt-10">
         <h3 className="">
           Therap BD Ltd is seeking talented individuals with experience in
           Oracle Cloud Infrastructure OCI, AWS, GCP or Azure to join our team.
           Candidates with OCI experience and certifications will be given
           preference.
         </h3>
-        <div className="flex items-center gap-3 my-6">
-          <CgWorkAlt className="text-lg" />{" "}
+        <div className="flex flex-col lg:flex-row items-center gap-3 my-6">
+          <CgWorkAlt className="text-lg" />
           <span className="text-lg font-semibold">Experience :</span>
           2+ years of experience motivated freshers are encouraged to apply
         </div>
-        <div className="flex items-center gap-3 my-6">
+        <div className="flex flex-col lg:flex-row items-center gap-3 my-6">
           <MdOutlineWorkOutline className="text-lg" />
           <span className="text-lg font-semibold">Job Title :</span>
           Associate System Administrator
         </div>
-        <div className="flex gap-2 items-start my-6">
-        <div className="flex items-center max-w-xs w-full gap-2">
-        <MdOutlineWorkOutline className="text-lg" />
-          <p className="text-lg font-semibold ">Job Description:</p>
+        <div className="flex flex-col items-start gap-2 my-6">
+          <div className="flex items-center gap-3">
+            <MdOutlineWorkOutline className="text-lg" />
+            <p className="text-lg font-semibold ">Job Description:</p>
+          </div>
+
+          <div className=" w-full">
+            
+            We are looking for skilled Linux System Administrators who are
+            passionate about cloud technologies and have hands-on experience
+            with OCI and AWS. Candidates will be responsible for designing,
+            implementing, and maintaining cloud infrastructure solutions for
+            Theraps in house development and production environments.
+          </div>
         </div>
-         
-         <div className="col-span-1 md:col-span-2"> We are looking for skilled Linux System Administrators who are passionate about cloud technologies and have hands-on experience with OCI and AWS. Candidates will be responsible for designing, implementing, and maintaining cloud infrastructure solutions for Theraps in house development and production environments.</div>
+        <div className="flex flex-col  items-start gap-2 my-6">
+          <div className="flex items-center gap-3">
+            <MdOutlineWorkOutline className="text-lg" />
+            <p className="text-lg font-semibold">
+              Skills and Personal Qualities:
+            </p>
+          </div>
+{skills.map((skill,i)=>(
+    <div key={i} className="flex items-center gap-3">
+            <BsPatchCheck className="w-5 h-5 flex flex-shrink-0"/>
+           {skill.title}
+          </div>
+))}
+        
+        
+        </div>
+        <div className="flex flex-col  items-start gap-2 my-6">
+          <div className="flex items-start md:items-center gap-3">
+            <MdOutlineWorkOutline className="text-lg" />
+            <p className="text-lg font-semibold">
+            Educational and Portfolio Requirements:
+            </p>
+          </div>
+
+    <div  className="flex  items-start gap-3">
+            <BsPatchCheck className="w-5 h-5 flex flex-shrink-0" />
+            <p> This position requires a bachelors degree in Computer Science or related field. The candidate must be proficient in the tools mentioned above. The candidate must have at least 2 years of experience in web design.</p>
+           
+          </div>
+          <div  className="flex items-center gap-3">
+            <BsPatchCheck />
+            A strong portfolio that displays creativity.
+          </div>
+
+        
+        
         </div>
       </div>
     </div>
