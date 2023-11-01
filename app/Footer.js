@@ -25,7 +25,7 @@ export const Footer = () => {
               >
            
           <Image
-              className=" w-full h-16"
+              className=" w-full h-16 hidden dark:block"
               loading="lazy"
               object-fit="cover"
               height={1000}
@@ -33,7 +33,15 @@ export const Footer = () => {
               src="/darklogo.png"
               alt="image"
             />
-         
+             <Image
+              className=" w-full h-16 block dark:hidden"
+              loading="lazy"
+              object-fit="cover"
+              height={1000}
+              width={1000}
+              src="/logo.png"
+              alt="image"
+            />
              
               </a>
               <div className="mt-10 lg:max-w-sm">

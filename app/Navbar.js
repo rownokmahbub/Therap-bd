@@ -13,7 +13,7 @@ export default function App() {
   const navlinks=[
     {
       label:'Current Opening',
-      href:'/c',
+      href:'/currentopening',
     },
     {
       label:'Departments',
