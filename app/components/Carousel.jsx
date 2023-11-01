@@ -16,7 +16,7 @@ export default class Carousel extends Component {
       slidesToScroll: 2,
       autoplay: true,
       autoplaySpeed: 3000,
-      arrows:true,
+      arrows:false,
       swipe:true,
       dots: true,
       pauseOnHover: true

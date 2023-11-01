@@ -80,9 +80,9 @@ export default function CurrentOpening() {
     <div className='container mx-auto flex flex-col md:h-screen justify-center items-center px-4 lg:px-0 mt-10 mb-4'>
         <h3 className='text-4xl font-semibold'>Jobs At Therap BD LTD</h3>
         <p className='max-w-2xl w-full text-center mt-4'>Therap BD Ltd. is a US-based Software Company registered in Bangladesh, operating since 2004. We have our office in Dhaka, Bangladesh, and affiliate offices in the USA and Canada. To learn more, please visit TherapBD website.</p>
-        <div className=" bg-slate-50 shadow-xl shadow-slate-50 dark:shadow-slate-800 border border-slate-200 dark:border-slate-600 dark:bg-slate-800 rounded-xl md:px-10 py-10 mt-10 max-w-5xl w-full ">
+        <div className=" bg-slate-50 shadow-xl shadow-slate-50 dark:shadow-slate-800 border border-slate-200 dark:border-slate-600 dark:bg-slate-800 rounded-xl md:px-10 py-10 mt-10 max-w-6xl w-full ">
        
-        <div className='flex flex-col md:flex-row  justify-between gap-5 items-center w-full'>
+        <div className='flex flex-col md:flex-row px-4 md:px-0 justify-between gap-5 items-center w-full'>
         <Input
           type="email"
           label="Search Jobs"
@@ -93,7 +93,7 @@ export default function CurrentOpening() {
             <RiSearchLine className="text-2xl text-default-400 pointer-events-none flex-shrink-0"/>
           }
         />
-        <div className="flex items-center gap-3 w-full">
+        <div className="flex flex-col md:flex-row  items-center gap-5 md:gap-3 w-full">
         <Select 
             size='sm'
             label="Sort By"
