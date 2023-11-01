@@ -70,7 +70,7 @@ export default function ExploreCarer() {
 
     ]
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto' id='department'>
         <h3 className='text2xl lg:text-5xl text-center'>Explore Careers at Therap BD Ltd.</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6 items-center mt-10">
 {careers.map((cr,i)=>(

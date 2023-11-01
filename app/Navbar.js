@@ -9,26 +9,18 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation';
 export default function App() {
 
-
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const navlinks=[
     {
       label:'Current Opening',
       href:'/currentopening',
     },
-    {
-      label:'Departments',
-      href:'/about',
-    },
-    {
-      label:'About Us',
-      href:'/gallery',
-      
-    },
-    {
-      label:'Contact Us',
-      href:'/gallery',
-      
-    },
+  
 
   ];
   const pathname = usePathname();
@@ -72,17 +64,25 @@ export default function App() {
           {
             navlinks.map((link,i)=>{
               return(
-                <Link key={i} className={pathname=== `${link.href}` ? 'text-white bg-primary px-4 py-2 font-bold rounded-lg shadow-xl shadow-slate-200 dark:shadow-slate-900' : ''} color="foreground" href={link.href}>
-                <div>
-                {link.label}
-                </div>
-             
+                <Link key={i} className={pathname=== `${link.href}` ? ' bg-primary text-white rounded-lg px-3 py-1.5' : 'text-lg font-medium'} color="foreground" href={link.href}>
+             {link.label}
             </Link>
-            
               )
             })
           }
-       
+          <Button onClick={() => scrollToSection('department')}  className='text-lg font-medium' color="foreground">
+               Department
+             
+            </Button>
+                <Button onClick={() => scrollToSection('aboutus')}  className='text-lg font-medium' color="foreground">
+               About Us
+             
+            </Button>
+            <Button onClick={() => scrollToSection('contactus')}  className='text-lg font-medium' color="foreground">
+               Contact Us
+             
+            </Button>
+            
           
           <Switch />
           
@@ -122,7 +122,7 @@ export default function App() {
           {
             navlinks.map((link,i)=>{
               return(
-                <Link key={i} className={pathname=== `${link.href}` ? 'text-white bg-primary px-4 py-2 font-bold rounded-lg shadow-xl shadow-slate-200 dark:shadow-slate-900' : ''} color="foreground" href={link.href}>
+                <Link key={i} className={pathname=== `${link.href}` ? 'text-lg font-medium' : ''} color="foreground" href={link.href}>
              {link.label}
             </Link>
               )

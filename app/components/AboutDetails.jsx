@@ -35,7 +35,7 @@ const AboutDetails = () => {
   ];
   return (
     <>
-      <div className=" relative container lg:mx-auto  py-10 lg:py-2 mt-10  px-4 lg:px-10 ">
+      <div id="aboutus" className=" relative container lg:mx-auto  py-10 lg:py-2 mt-10  px-4 lg:px-10 ">
         <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:h-[80vh] lg:gap-20 rounded-xl overflow-hidden">
           <iframe
             className="rounded-3xl"
