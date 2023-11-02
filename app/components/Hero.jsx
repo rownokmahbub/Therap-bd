@@ -22,7 +22,7 @@ const Hero = () => {
   <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:h-[80vh]">
   <div className='max-w-4xl w-full '>
   <p className=' text-sm lg:text-lg  bg-sky-100 dark:bg-sky-800 px-4 py-1 my-5 w-fit rounded-xl border-l-8 border-sky-300 text-sky-600 dark:text-sky-200'>Online/ Offline Learning Platform</p>
-  <h1 className='text-2xl lg:text-5xl  uppercase font-bold mt-5'>Master The Skills<br /> Drive Your Career.</h1>
+  <h1 className='text-2xl lg:text-5xl  capitalize font-bold mt-5'>Master The Skills<br /> Drive Your Career.</h1>
   <p className='text-sm lg:text-md text-slate-400 dark:text-slate-300 font-medium max-w-lg my-5'>Through a combination of lectures, readings, and discussions, students
 will gain a solid foundation in educational psychology.</p>
  <Button className='shadow-xl ' color='primary' size='lg' radius='sm'>
