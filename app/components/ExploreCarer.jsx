@@ -79,13 +79,15 @@ export default function ExploreCarer() {
     <HiPresentationChartLine className='text-primary text-xl'/>
         <p className='text-lg lg:text-xl font-medium'>{cr.career}</p>
     </div>
-        <Link className='' href={cr.href}>
+        
         <Button color='primary'>
+        <Link className='flex items-center gap-2' href={cr.href}>
         View
             <BsArrowRightSquareFill className='text-white'/>
+            </Link>
         </Button>
           
-        </Link>
+      
     </div>
 ))}
         </div>

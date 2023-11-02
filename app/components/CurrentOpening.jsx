@@ -143,11 +143,12 @@ export default function CurrentOpening() {
                 <p className='text-sm '>{dt.time}</p>
                 </div>
             </div>
-        <Link href='/jobs'>
         <Button variant='solid' color='primary'>
+        <Link href='/jobs'>
                     Apply Now
-                </Button>
+
         </Link>
+                </Button>
               
               
             </div>

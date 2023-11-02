@@ -4,7 +4,7 @@ const nextConfig = {
         domains:[
             'images.pexels.com',
             'img.freepik.com',
-          
+            'thbdcareer.wpengine.com'
         ]
     },
 }
